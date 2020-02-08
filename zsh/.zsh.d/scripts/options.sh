@@ -1,4 +1,6 @@
 unset MAILCHECK
+unsetopt correctall
+setopt +o nomatch
 
 # Asdf
 if [[ "$(uname)" == "Darwin" ]]; then
@@ -6,8 +8,6 @@ if [[ "$(uname)" == "Darwin" ]]; then
   . $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
 
   ulimit -S -n 2048
-  unsetopt correctall
-  setopt +o nomatch
 else
   . $HOME/.asdf/asdf.sh
   . $HOME/.asdf/completions/asdf.bash
