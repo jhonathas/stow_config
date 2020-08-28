@@ -23,7 +23,7 @@ export LC_ALL=en_US.UTF-8
 
 export EDITOR='nvim'
 
-source /usr/share/doc/fzf/examples/key-bindings.zsh
+# source /usr/share/doc/fzf/examples/key-bindings.zsh
 
 # Java and Android
 
